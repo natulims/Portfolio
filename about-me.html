@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <title>natu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--fonts-->
@@ -14,7 +14,7 @@
     />
 
     <!--fav icon-->
-    <link rel="icon" href="assets/imgs/icon1.png" />
+    <link rel="icon" href="" />
 
     <!--reset css-->
     <link rel="stylesheet" href="assets/css/reset.css" />
@@ -35,7 +35,7 @@
     />
 
     <!--main css-->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/about-me/about-me.css" />
   </head>
   <body>
     <!--start - dark mode-->
@@ -44,47 +44,48 @@
     </section>
     <!--end dark mode -->
 
-    <!--start - header area-->
-    <header class="header">
-      <div class="hero">
-        <div class="hero__img">
-          <img src="assets/imgs/favicon1.png" alt="" />
+    <!--start - main area-->
+    <main class="main">
+      <div class="main__container">
+        <div class="main__image">
+          <img src="assets/imgs/about-me.png" alt="" />
         </div>
       </div>
-      <div class="hero__container">
-        <p class="hero__text">Hi! I am</p>
-        <h1 class="hero__title">natu</h1>
+      <div class="main__content">
+        <h1 class="main__title">about me</h1>
         <div class="text-justify m-1">
-          <p class="hero__info">
-            I am an Illustrator and graphic designer based in Brazil. I like to
-            be able to share what I do with everyone! My main goal is to improve
-            as a developer and UI/UX designer.
+          <p class="main__text">
+            My name is Natalia, but you can call me natu. I enjoy creating
+            things that I like. I'm a brazilian illustrator and this isn't my
+            first time dealing with web development, the first time was in 2011
+            when I tried to customize my own Tumblr themes. I'm improving my
+            knowledge in HTML, CSS and Javascript.
           </p>
+          <div class="main__info">
+            <img src="assets/imgs/AboutMeInfo.png" alt="" />
+          </div>
         </div>
       </div>
-    </header>
-    <!--end - header area-->
+    </main>
+    <!--end - main area-->
 
     <!--start - icons area-->
-    <section class="icons">
-      <div class="grid grid-cols-2">
-        <div class="icons__art">
-          <a href="about-me.html"><img src="assets/imgs/about.png" alt="" /></a>
-        </div>
-        <div class="icons__art">
-          <a href="contact-me.html"
-            ><img src="assets/imgs/contact.png" alt=""
-          /></a>
-        </div>
-        <div class="icons__art">
-          <a href="projects.html"
-            ><img src="assets/imgs/projects.png" alt=""
-          /></a>
-        </div>
-        <div class="icons__art">
-          <a href="illustrations.html"
-            ><img src="assets/imgs/illustrations.png" alt=""
-          /></a>
+    <section class="skills">
+      <h2 class="skills__title">skills</h2>
+      <div class="skills__animation">
+        <div class="grid grid-cols-4 gap-4 m-1 p-2">
+          <div class="skills__item">
+            <img src="assets/imgs/sass.png" alt="" />
+          </div>
+          <div class="skills__item">
+            <img src="assets/imgs/js.png" alt="" />
+          </div>
+          <div class="skills__item">
+            <img src="assets/imgs/css.png" alt="" />
+          </div>
+          <div class="skills__item">
+            <img src="assets/imgs/html.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -110,20 +111,7 @@
         </div>
       </div>
     </footer>
-    <!-- <footer class="footer">
-      <span class="footer__text">made with magic &copy;2023</span>
-      <span class="footer__text"></span>
-      <div class="footer__container">
-        <a href=""><i class="bx bxl-github"></i></a>
-        <a href=""><i class="bx bxl-instagram"></i></a>
-        <a href=""><i class="bx bxl-deviantart"></i></a>
-        <a href=""><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </footer>
-   -->
-
     <!--end - footer area-->
-
     <script src="./assets/scripts/main.js"></script>
   </body>
 </html>

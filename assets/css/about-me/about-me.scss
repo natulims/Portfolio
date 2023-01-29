@@ -1,0 +1,160 @@
+/*fonts*/
+@font-face {
+  font-family: "Sunflower";
+  src: url("../fonts/sunflower.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tommy";
+  src: url("../fonts/Tommy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+//color palette
+$main-color: #1e1c1e;
+$text-color: #f8eeec;
+$title-color: #f5856c;
+$subtitle-color: #f7c3b7;
+$details-color: #629993;
+
+//fonts
+@mixin text() {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+@mixin title() {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+@mixin subtitle() {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/*start css global*/
+body {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  ::selection {
+    background-color: $details-color;
+  }
+}
+/*end css global*/
+
+/*dark mode css*/
+.dark-mode {
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+  align-items: center;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0 0 12rem 12rem;
+  background-color: $subtitle-color;
+
+  &__text {
+    text-align: center;
+    color: $main-color;
+    font-size: 2em;
+  }
+
+  @media (min-width: 500px) {
+    margin-left: 50%;
+  }
+}
+
+/**/
+.main {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+    @media screen and (max-width: 860px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 10px;
+    margin: 20px;
+  }
+
+  &__image {
+    @media screen and (min-width: 860px) {
+      width: 100%;
+      max-width: 30%;
+      margin-left: 1rem;
+    }
+  }
+  &__info {
+    @media screen and (min-width: 860px) {
+      width: 100%;
+      max-width: 30rem;
+      margin-left: 46rem;
+    }
+  }
+  &__title {
+    @include title();
+    font-size: 3em;
+    text-align: center;
+    color: $title-color;
+    @media (min-width: 860px) {
+      margin-left: 5rem;
+    }
+  }
+  &__text {
+    @include text();
+    font-size: 1em;
+    text-align: center;
+    color: $text-color;
+    font-family: "Poppins", sans-serif;
+
+    @media screen and (min-width: 860px) {
+      padding-left: 15rem;
+      padding-right: 15rem;
+      margin-top: 5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+.skills {
+  &__title {
+    @include title();
+    font-size: 3em;
+    text-align: center;
+    color: $title-color;
+    @media (min-width: 860px) {
+      margin-left: 5rem;
+    }
+  }
+}
+
+/*footer*/
+.footer {
+  display: grid;
+  color: $text-color;
+  text-align: center;
+  @include text();
+  font-size: 1.3em;
+  font-weight: bold;
+
+  &__link {
+    display: inline-block;
+    font-size: 1.5em;
+
+    :hover {
+      color: $title-color;
+    }
+  }
+}

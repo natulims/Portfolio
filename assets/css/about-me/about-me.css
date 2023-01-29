@@ -1,0 +1,139 @@
+/*fonts*/
+@font-face {
+  font-family: "Sunflower";
+  src: url("../fonts/sunflower.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tommy";
+  src: url("../fonts/Tommy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*start css global*/
+body {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body ::-moz-selection {
+  background-color: #629993;
+}
+body ::selection {
+  background-color: #629993;
+}
+
+/*end css global*/
+/*dark mode css*/
+.dark-mode {
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+  align-items: center;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0 0 12rem 12rem;
+  background-color: #f7c3b7;
+}
+.dark-mode__text {
+  text-align: center;
+  color: #1e1c1e;
+  font-size: 2em;
+}
+@media (min-width: 500px) {
+  .dark-mode {
+    margin-left: 50%;
+  }
+}
+
+/**/
+.main__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+@media screen and (max-width: 860px) {
+  .main__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 10px;
+  margin: 20px;
+}
+@media screen and (min-width: 860px) {
+  .main__image {
+    width: 100%;
+    max-width: 30%;
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 860px) {
+  .main__info {
+    width: 100%;
+    max-width: 30rem;
+    margin-left: 46rem;
+  }
+}
+.main__title {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #f5856c;
+}
+@media (min-width: 860px) {
+  .main__title {
+    margin-left: 5rem;
+  }
+}
+.main__text {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: #f8eeec;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (min-width: 860px) {
+  .main__text {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-top: 5rem;
+    font-size: 1rem;
+  }
+}
+
+.skills__title {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #f5856c;
+}
+@media (min-width: 860px) {
+  .skills__title {
+    margin-left: 5rem;
+  }
+}
+
+/*footer*/
+.footer {
+  display: grid;
+  color: #f8eeec;
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.footer__link {
+  display: inline-block;
+  font-size: 1.5em;
+}
+.footer__link :hover {
+  color: #f5856c;
+}/*# sourceMappingURL=about-me.css.map */
