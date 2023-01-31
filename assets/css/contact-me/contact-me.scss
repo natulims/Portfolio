@@ -131,6 +131,7 @@ body {
     min-height: 15em;
     resize: none;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
   }
 
   input:focus,
@@ -160,6 +161,7 @@ body {
 }
 
 /*footer*/
+
 .footer {
   display: grid;
   color: $text-color;

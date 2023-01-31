@@ -106,6 +106,7 @@ body ::selection {
   min-height: 15em;
   resize: none;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 .form input:focus,
 .form textarea:focus {
