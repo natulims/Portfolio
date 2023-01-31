@@ -1,0 +1,148 @@
+/*fonts*/
+@font-face {
+  font-family: "Sunflower";
+  src: url("../fonts/sunflower.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tommy";
+  src: url("../fonts/Tommy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*start css global*/
+body {
+  background-color: #1e1c1e;
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body ::-moz-selection {
+  background-color: #629993;
+}
+body ::selection {
+  background-color: #629993;
+}
+
+/*end css global*/
+/*dark mode css*/
+.dark-mode {
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+  align-items: center;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0 0 12rem 12rem;
+  background-color: #f7c3b7;
+}
+.dark-mode__text {
+  text-align: center;
+  color: #1e1c1e;
+  font-size: 2em;
+}
+@media (min-width: 500px) {
+  .dark-mode {
+    margin-left: 50%;
+  }
+}
+
+/*form*/
+.form {
+  line-height: normal;
+  text-indent: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #f8eeec;
+  font-weight: normal;
+  font-family: #f8eeec;
+}
+.form__title {
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #f5856c;
+  text-transform: capitalize;
+}
+.form__text {
+  font-family: "Poppins", sans-serif;
+}
+.form__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+  gap: 10px;
+}
+.form #name {
+  text-transform: capitalize;
+}
+.form #last-name {
+  text-transform: capitalize;
+}
+.form__textarea {
+  margin: 0s;
+}
+.form input,
+.form label {
+  height: 2rem;
+  left: 0;
+}
+.form input,
+.form textarea {
+  font-family: "Poppins", sans-serif;
+  margin: 0.2rem;
+  padding: 1rem;
+  border: 1px solid #f5856c;
+  width: 50%;
+  font-size: 1rem;
+  background-color: #1e1c1e;
+  color: #f7c3b7;
+  border-radius: 4px;
+}
+.form textarea {
+  width: 50%;
+  min-height: 15em;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+.form input:focus,
+.form textarea:focus {
+  outline: 0;
+}
+.form__btn {
+  position: relative;
+  padding: 1.1rem 3rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  color: #f7c3b7;
+  border: 2px solid;
+  border-color: #f5856c;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.form__btn:hover {
+  transform: translateY(1px);
+  color: #f5856c;
+  border: 2px solid;
+  border-color: #f7c3b7;
+}
+
+/*footer*/
+.footer {
+  display: grid;
+  color: #f8eeec;
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.footer__link {
+  display: inline-block;
+  font-size: 1.5em;
+}
+.footer__link :hover {
+  color: #f5856c;
+}/*# sourceMappingURL=contact-me.css.map */

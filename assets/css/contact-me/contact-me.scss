@@ -1,0 +1,177 @@
+/*fonts*/
+@font-face {
+  font-family: "Sunflower";
+  src: url("../fonts/sunflower.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tommy";
+  src: url("../fonts/Tommy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+//color palette
+$main-color: #1e1c1e;
+$text-color: #f8eeec;
+$title-color: #f5856c;
+$subtitle-color: #f7c3b7;
+$details-color: #629993;
+
+//fonts
+@mixin text() {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+@mixin title() {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+@mixin subtitle() {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/*start css global*/
+body {
+  background-color: $main-color;
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  ::selection {
+    background-color: $details-color;
+  }
+}
+/*end css global*/
+
+/*dark mode css*/
+.dark-mode {
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+  align-items: center;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0 0 12rem 12rem;
+  background-color: $subtitle-color;
+
+  &__text {
+    text-align: center;
+    color: $main-color;
+    font-size: 2em;
+  }
+
+  @media (min-width: 500px) {
+    margin-left: 50%;
+  }
+}
+
+/*form*/
+.form {
+  line-height: normal;
+  text-indent: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  color: $text-color;
+  font-weight: normal;
+  font-family: $text-color;
+  &__title {
+    @include title();
+    color: $title-color;
+    text-transform: capitalize;
+  }
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+    gap: 10px;
+  }
+
+  #name {
+    text-transform: capitalize;
+  }
+
+  #last-name {
+    text-transform: capitalize;
+  }
+  &__textarea {
+    margin: 0s;
+  }
+  input,
+  label {
+    height: 2rem;
+    left: 0;
+  }
+  input,
+  textarea {
+    font-family: "Poppins", sans-serif;
+    margin: 0.2rem;
+    padding: 1rem;
+    border: 1px solid $title-color;
+    width: 50%;
+    font-size: 1rem;
+    background-color: $main-color;
+    color: $subtitle-color;
+    border-radius: 4px;
+  }
+
+  textarea {
+    width: 50%;
+    min-height: 15em;
+    resize: none;
+    font-family: "Poppins", sans-serif;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 0;
+  }
+
+  &__btn {
+    position: relative;
+    padding: 1.1rem 3rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    color: $subtitle-color;
+    border: 2px solid;
+    border-color: $title-color;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+
+  &__btn:hover {
+    transform: translateY(1px);
+    color: $title-color;
+    border: 2px solid;
+    border-color: $subtitle-color;
+  }
+}
+
+/*footer*/
+.footer {
+  display: grid;
+  color: $text-color;
+  text-align: center;
+  @include text();
+  font-size: 1.3em;
+  font-weight: bold;
+
+  &__link {
+    display: inline-block;
+    font-size: 1.5em;
+
+    :hover {
+      color: $title-color;
+    }
+  }
+}

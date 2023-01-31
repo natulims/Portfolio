@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact me!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,100&family=Maven+Pro&family=Mochiy+Pop+P+One&family=Poppins&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--fav icon-->
+    <link rel="icon" href="assets/imgs/favicon1.png" />
+
+    <!--reset css-->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!--icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--tailwind-->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!--main css-->
+    <link rel="stylesheet" href="assets/css/contact-me/contact-me.css" />
+  </head>
+  <body>
+    <!--start - dark mode-->
+    <section class="dark-mode">
+      <p class="dark-mode__text"><i class="bx bx-sun"></i></p>
+    </section>
+    <!--end dark mode -->
+
+    <!--start - form area-->
+    <!--start contact me area-->
+    <form class="form">
+      <h2 class="form__title">Get in touch</h2>
+      <p class="form__text">
+        In case you want to know more about my work just leave me a message and
+        I'll answer as soon as I can!
+      </p>
+      <div class="form__content">
+        <input
+          type="text"
+          class="form__input--name"
+          placeholder="First Name"
+          id="name"
+          required
+        />
+        <input
+          type="text"
+          class="form__input--lastname"
+          placeholder="Last Name"
+          id="last-name"
+          required
+        />
+        <input
+          type="email"
+          class="form__input--email"
+          placeholder="Email"
+          id="email"
+          required
+        />
+
+        <textarea
+          class="form__textarea"
+          rows="10"
+          placeholder="Message"
+          id="textarea"
+          required
+        ></textarea>
+        <button type="submit" class="form__btn" id="submit">
+          Send Message
+        </button>
+      </div>
+    </form>
+    <!--end contact me area-->
+
+    <!-- <form action="" class="form">
+      <div class="form__container">
+        <div class="flex flex-col">
+          <div class="form__left"></div>
+          <div class="form__right">
+            <h2 class="form__title">Contact me</h2>
+            <p class="form__text">
+              In case you want to know more about my work or have any questions
+              you can contact me any time! I'll answer as soon as I can
+            </p>
+            <input type="text" name="" id="" />
+            <input type="email" name="" id="" />
+            <input type="text" name="" id="" />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="form__submit">
+              <button type="submit" class="form__button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form> -->
+
+    <!--start - footer area-->
+    <footer class="footer">
+      <div class="flex flex-wrap justify-center text-center m-3">
+        <div class="footer__container">
+          <p class="footer__text">made with magic</p>
+          <span class="footer__link"
+            ><a href=""><i class="bx bxl-github"></i></a
+          ></span>
+          <span class="footer__link"
+            ><a href=""><i class="bx bxl-github"></i></a
+          ></span>
+          <span class="footer__link"
+            ><a href=""><i class="bx bxl-github"></i></a
+          ></span>
+          <span class="footer__link"
+            ><a href=""><i class="bx bxl-github"></i></a
+          ></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
