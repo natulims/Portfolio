@@ -13,6 +13,7 @@
 }
 /*start css global*/
 body {
+  background-color: rgba(248, 221, 214, 0.7803921569);
   margin: auto;
   padding: 0;
   box-sizing: border-box;
@@ -61,10 +62,10 @@ body ::selection {
     flex-direction: column;
   }
 }
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 1025px) {
   .header .hero__image {
     width: 100%;
-    max-width: 30%;
+    max-width: 30px;
     margin-left: 1rem;
   }
 }
@@ -87,15 +88,18 @@ body ::selection {
   }
 }
 .header .hero__text {
+  color: #1e1c1e;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 1em;
   text-align: center;
-  color: #f8eeec;
 }
 @media (min-width: 860px) {
   .header .hero__text {
     margin-left: 5rem;
   }
+}
+.header .hero__info {
+  color: #1e1c1e;
 }
 @media screen and (min-width: 860px) {
   .header .hero__info {

@@ -25,6 +25,14 @@ body ::selection {
   background-color: #629993;
 }
 
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 /*end css global*/
 /*dark mode css*/
 .dark-mode {
@@ -40,6 +48,12 @@ body ::selection {
   text-align: center;
   color: #1e1c1e;
   font-size: 2em;
+  margin-left: 70%;
+}
+@media (min-width: 500px) {
+  .dark-mode__text {
+    margin-left: 70%;
+  }
 }
 @media (min-width: 500px) {
   .dark-mode {

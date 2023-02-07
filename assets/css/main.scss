@@ -14,6 +14,7 @@
 }
 
 //color palette
+$light-mode: #f8ddd6c7;
 $main-color: #1e1c1e;
 $text-color: #f8eeec;
 $title-color: #f5856c;
@@ -35,6 +36,7 @@ $details-color: #629993;
 
 /*start css global*/
 body {
+  background-color: $light-mode;
   margin: auto;
   padding: 0;
   box-sizing: border-box;
@@ -82,9 +84,9 @@ body {
     }
 
     &__image {
-      @media screen and (min-width: 860px) {
+      @media screen and (min-width: 1025px) {
         width: 100%;
-        max-width: 30%;
+        max-width: 30px;
         margin-left: 1rem;
       }
     }
@@ -113,10 +115,10 @@ body {
     }
 
     &__text {
+      color: $main-color;
       @include text();
       font-size: 1em;
       text-align: center;
-      color: $text-color;
 
       @media (min-width: 860px) {
         margin-left: 5rem;
@@ -124,6 +126,7 @@ body {
     }
 
     &__info {
+      color: $main-color;
       @media screen and (min-width: 860px) {
         padding-left: 15rem;
         padding-right: 15rem;
