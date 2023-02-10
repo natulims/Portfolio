@@ -1,0 +1,88 @@
+/*fonts*/
+@font-face {
+  font-family: "Tommy";
+  src: url("../fonts/Tommy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*body css*/
+body {
+  background-color: rgba(248, 221, 214, 0.7803921569);
+  color: #1e1c1e;
+  box-sizing: border-box;
+}
+body ::-moz-selection {
+  background-color: #adcfa5;
+}
+body ::selection {
+  background-color: #adcfa5;
+}
+
+/*dark mode css*/
+.dark-mode {
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0 0 12rem 12rem;
+  background-color: #adcfa5;
+}
+.dark-mode__text {
+  color: #f8eeec;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+/**/
+@media (min-width: 1025px) {
+  .illustrations {
+    width: 30rem;
+    margin-left: 45rem;
+  }
+}
+
+.illustration {
+  font-family: "Poppins", sans-serif;
+  top: 30px;
+  color: #1e1c1e;
+  line-height: 4rem;
+  gap: 90rem;
+}
+@media (min-width: 1025px) {
+  .illustration a {
+    margin-left: 30rem;
+  }
+}
+@media (min-width: 1025px) {
+  .illustration__img {
+    width: 50rem;
+    margin-left: 5rem;
+  }
+}
+
+/*button*/
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.previous-page {
+  width: 90px;
+}
+
+/*footer*/
+.footer {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+.footer__link {
+  display: inline-block;
+  font-size: 1.5em;
+  color: #fa7152;
+}
+.footer__link :hover {
+  color: #adcfa5;
+}/*# sourceMappingURL=projects.css.map */

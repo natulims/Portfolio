@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
   <head>
     <meta charset="utf-8" />
-    <title>Contact me!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Me</title>
+
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,16 +38,14 @@
     <link rel="stylesheet" href="assets/css/contact-me/contact-me.css" />
   </head>
   <body>
-    <!--start - dark mode-->
-    <section class="dark-mode">
-      <button class="dark-mode__button">
-        <p class="dark-mode__text"><i class="bx bx-sun"></i></p>
+    <!--dark mode-->
+    <div class="lg:-ml-60 flex items-center justify-center rounded-md">
+      <button class="dark-mode">
+        <p class="dark-mode__text"><i class="bx bx-moon"></i></p>
       </button>
-    </section>
-    <!--end dark mode -->
+    </div>
 
-    <!--start - form area-->
-    <!--start contact me area-->
+    <!--form-->
     <form class="form">
       <h2 class="form__title">Get in touch</h2>
       <p class="form__text">
@@ -88,35 +87,35 @@
         </button>
       </div>
     </form>
-    <!--end contact me area-->
 
-    <!--button-->
-    <div class="flex justify-center">
-      <button class="button__previous-page"><a href="/index.html">a</a></button>
+    <!--previous page-->
+    <div class="flex justify-center rounded-md items-center">
+      <button class="previous-page">
+        <a href="/index.html"
+          ><img
+            src="assets/imgs/seta.png"
+            alt=""
+        /></a>
+      </button>
     </div>
 
-    <!--start - footer area-->
-    <footer class="footer" onsubmit="send_email()">
-      <div class="flex flex-wrap justify-center text-center m-3">
-        <div class="footer__container">
-          <p class="footer__text">made with magic</p>
-          <span class="footer__link"
-            ><a href=""><i class="bx bxl-github"></i></a
-          ></span>
-          <span class="footer__link"
-            ><a href=""><i class="bx bxl-github"></i></a
-          ></span>
-          <span class="footer__link"
-            ><a href=""><i class="bx bxl-github"></i></a
-          ></span>
-          <span class="footer__link"
-            ><a href=""><i class="bx bxl-github"></i></a
-          ></span>
-        </div>
+    <!--footer-->
+    <footer class="flex flex-wrap justify-center text-center m-3">
+      <div class="footer">
+        <p class="footer__text">made with magic</p>
+        <span class="footer__link"
+          ><a target="”_blank”" href="https://www.instagram.com/natulims/"
+            ><i class="bx bxl-instagram"></i></a
+        ></span>
+        <span class="footer__link"
+          ><a target="”_blank”" href="https://github.com/natulims"
+            ><i class="bx bxl-github"></i></a
+        ></span>
+        <span class="footer__link"
+          ><a target="”_blank”" href="linkedin.com/in/nxtxlixlc/"
+            ><i class="bx bxl-linkedin"></i></a
+        ></span>
       </div>
     </footer>
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./assets/scripts/main.js"></script>
   </body>
 </html>

@@ -1,64 +1,34 @@
 /*fonts*/
 @font-face {
-  font-family: "Sunflower";
-  src: url("../fonts/sunflower.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "Tommy";
   src: url("../fonts/Tommy.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
-/*start css global*/
+/*body css*/
 body {
-  background-color: #1e1c1e;
-  margin: auto;
-  padding: 0;
+  background-color: rgba(248, 221, 214, 0.7803921569);
+  color: #1e1c1e;
   box-sizing: border-box;
 }
 body ::-moz-selection {
-  background-color: #629993;
+  background-color: #adcfa5;
 }
 body ::selection {
-  background-color: #629993;
+  background-color: #adcfa5;
 }
 
-button {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
-/*end css global*/
 /*dark mode css*/
 .dark-mode {
-  margin-left: 10rem;
-  margin-bottom: 5rem;
-  align-items: center;
   width: 5rem;
   height: 3rem;
   border-radius: 0 0 12rem 12rem;
-  background-color: #f7c3b7;
+  background-color: #adcfa5;
 }
 .dark-mode__text {
+  color: #f8eeec;
   text-align: center;
-  color: #1e1c1e;
-  font-size: 2em;
-  margin-left: 70%;
-}
-@media (min-width: 500px) {
-  .dark-mode__text {
-    margin-left: 70%;
-  }
-}
-@media (min-width: 500px) {
-  .dark-mode {
-    margin-left: 50%;
-  }
+  font-size: 1.6em;
 }
 
 /*form*/
@@ -73,11 +43,13 @@ button {
 }
 .form__title {
   font-family: "Mochiy Pop P One", sans-serif;
-  color: #f5856c;
+  color: #fa7152;
+  font-size: 2em;
   text-transform: capitalize;
 }
 .form__text {
   font-family: "Poppins", sans-serif;
+  color: #1e1c1e;
 }
 .form__content {
   display: flex;
@@ -108,11 +80,11 @@ button {
   font-family: "Poppins", sans-serif;
   margin: 0.2rem;
   padding: 1rem;
-  border: 1px solid #f5856c;
+  border: 1px solid #fa7152;
   width: 50%;
   font-size: 1rem;
-  background-color: #1e1c1e;
-  color: #f7c3b7;
+  background-color: rgba(248, 221, 214, 0.7803921569);
+  color: #fa7152;
   border-radius: 4px;
 }
 .form textarea {
@@ -131,33 +103,45 @@ button {
   padding: 1.1rem 3rem;
   border-radius: 0.5rem;
   display: inline-block;
-  color: #f7c3b7;
+  color: #ec9680;
   border: 2px solid;
-  border-color: #f5856c;
+  border-color: #fa7152;
   font-size: 18px;
   cursor: pointer;
   transition: all 300ms ease;
 }
 .form__btn:hover {
   transform: translateY(1px);
-  color: #f5856c;
+  color: #fa7152;
   border: 2px solid;
-  border-color: #f7c3b7;
+  border-color: #ec9680;
+}
+
+/*button*/
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.previous-page {
+  width: 90px;
 }
 
 /*footer*/
 .footer {
-  display: grid;
-  color: #f8eeec;
   text-align: center;
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 1.3em;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
 }
 .footer__link {
   display: inline-block;
   font-size: 1.5em;
+  color: #fa7152;
 }
 .footer__link :hover {
-  color: #f5856c;
+  color: #adcfa5;
 }/*# sourceMappingURL=contact-me.css.map */

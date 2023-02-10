@@ -1,12 +1,5 @@
 /*fonts*/
 @font-face {
-  font-family: "Sunflower";
-  src: url("../fonts/sunflower.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Tommy";
   src: url("../fonts/Tommy.otf") format("opentype");
   font-weight: normal;
@@ -14,15 +7,16 @@
 }
 
 //color palette
+$light-mode: #f8ddd6c7;
 $main-color: #1e1c1e;
 $text-color: #f8eeec;
-$title-color: #f5856c;
-$subtitle-color: #f7c3b7;
-$details-color: #629993;
+$title-color: #fa7152;
+$subtitle-color: #ec9680;
+$details-color: #adcfa5;
 
 //fonts
 @mixin text() {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @mixin title() {
@@ -30,52 +24,30 @@ $details-color: #629993;
 }
 
 @mixin subtitle() {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Tommy", sans-serif;
 }
 
-/*start css global*/
+/*body css*/
 body {
-  background-color: $main-color;
-  margin: auto;
-  padding: 0;
+  background-color: $light-mode;
+  color: $main-color;
   box-sizing: border-box;
   ::selection {
     background-color: $details-color;
   }
 }
 
-button {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-/*end css global*/
-
 /*dark mode css*/
 .dark-mode {
-  margin-left: 10rem;
-  margin-bottom: 5rem;
-  align-items: center;
   width: 5rem;
   height: 3rem;
   border-radius: 0 0 12rem 12rem;
-  background-color: $subtitle-color;
+  background-color: $details-color;
 
   &__text {
+    color: $text-color;
     text-align: center;
-    color: $main-color;
-    font-size: 2em;
-    margin-left: 70%;
-
-    @media (min-width: 500px) {
-      margin-left: 70%;
-    }
-  }
-
-  @media (min-width: 500px) {
-    margin-left: 50%;
+    font-size: 1.6em;
   }
 }
 
@@ -91,11 +63,13 @@ button {
   &__title {
     @include title();
     color: $title-color;
+    font-size: 2em;
     text-transform: capitalize;
   }
 
   &__text {
     font-family: "Poppins", sans-serif;
+    color: $main-color;
   }
 
   &__content {
@@ -134,8 +108,8 @@ button {
     border: 1px solid $title-color;
     width: 50%;
     font-size: 1rem;
-    background-color: $main-color;
-    color: $subtitle-color;
+    background-color: $light-mode;
+    color: $title-color;
     border-radius: 4px;
   }
 
@@ -173,22 +147,33 @@ button {
   }
 }
 
-/*footer*/
+/*button*/
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
 
+.previous-page {
+  width: 90px;
+}
+
+/*footer*/
 .footer {
-  display: grid;
-  color: $text-color;
   text-align: center;
   @include text();
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1em;
 
   &__link {
     display: inline-block;
     font-size: 1.5em;
+    color: $title-color;
 
     :hover {
-      color: $title-color;
+      color: $details-color;
     }
   }
 }

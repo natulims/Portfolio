@@ -37,81 +37,79 @@
     <!--main css-->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body>
-    <!--start - dark mode-->
-    <section class="dark-mode">
-      <p class="dark-mode__text"><i class="bx bx-sun"></i></p>
-    </section>
-    <!--end dark mode -->
 
-    <!--start - header area-->
-    <header class="header">
+  <body>
+    <!--dark mode-->
+    <div class="lg:-ml-60 flex items-center justify-center rounded-md">
+      <button class="dark-mode">
+        <p class="dark-mode__text"><i class="bx bx-moon"></i></p>
+      </button>
+    </div>
+
+    <!--header-->
+    <header
+      class="flex flex-row justify-center m-0 p-0 items-center md:flex-col"
+    >
       <div class="hero">
         <div class="hero__img">
-          <img src="assets/imgs/favicon1.png" alt="" />
+          <img class="" src="assets/imgs/favicon1.png" alt="" />
         </div>
-      </div>
-      <div class="hero__container">
-        <p class="hero__text">Hi! I am</p>
-        <h1 class="hero__title">natu</h1>
-        <div class="text-justify m-1 text-purple-900">
-          <p class="hero__info">
-            I am an Illustrator and graphic designer based in Brazil. I like to
-            be able to share what I do with everyone! My main goal is to improve
-            as a developer and UI/UX designer.
+        <div class="flex flex-col justify-around p-2.5 m-4 text-justify">
+          <p class="hero__title">welcome!</p>
+          <p class="text-center">
+            <span>illustrator</span> +
+            <span>web designer</span>
           </p>
         </div>
+        <p class="hero__text">
+          I am an Illustrator and graphic designer based in Brazil. I like to be
+          able to share what I do with everyone! My main goal is to improve as a
+          developer and UI/UX designer.
+        </p>
       </div>
     </header>
-    <!--end - header area-->
 
-    <!--start - icons area-->
-    <section class="icons">
-      <div class="grid grid-cols-2 md\:-m-1">
-        <div class="icons__art">
-          <a href="about-me.html"><img src="assets/imgs/about.png" alt="" /></a>
-        </div>
-        <div class="icons__art">
-          <a href="contact-me.html"
-            ><img src="assets/imgs/contact.png" alt=""
-          /></a>
-        </div>
-        <div class="icons__art">
-          <a href="projects.html"
-            ><img src="assets/imgs/projects.png" alt=""
-          /></a>
-        </div>
-        <div class="icons__art">
-          <a href="illustrations.html"
-            ><img src="assets/imgs/illustrations.png" alt=""
-          /></a>
-        </div>
+    <!--icons section-->
+    <section class="grid grid-cols-2 md:w-96">
+      <div class="icons">
+        <a href="about-me.html"><img src="assets/imgs/about.png" alt="" /></a>
+      </div>
+      <div class="icons">
+        <a href="contact-me.html"
+          ><img src="assets/imgs/contact.png" alt=""
+        /></a>
+      </div>
+      <div class="icons">
+        <a href="projects.html"
+          ><img src="assets/imgs/projects.png" alt=""
+        /></a>
+      </div>
+      <div class="icons">
+        <a href="illustrations.html"
+          ><img src="assets/imgs/illustrations.png" alt=""
+        /></a>
       </div>
     </section>
-    <!--end - icons area-->
 
-    <!--start - footer area-->
-    <footer class="footer">
-      <div class="flex flex-wrap justify-center text-center m-3">
-        <div class="footer__container">
-          <p class="footer__text">made with magic</p>
-          <span class="footer__link"
-            ><a href="https://www.instagram.com/natulims/"
-              ><i class="bx bxl-instagram"></i></a
-          ></span>
-          <span class="footer__link"
-            ><a href="https://github.com/natulims"
-              ><i class="bx bxl-github"></i></a
-          ></span>
-          <span class="footer__link"
-            ><a href="linkedin.com/in/nxtxlixlc/"
-              ><i class="bx bxl-linkedin"></i></a
-          ></span>
-        </div>
+    <!--footer-->
+    <footer class="flex flex-wrap justify-center text-center m-3">
+      <div class="footer">
+        <p class="footer__text">made with magic</p>
+        <span class="footer__link"
+          ><a target="”_blank”" href="https://www.instagram.com/natulims/"
+            ><i class="bx bxl-instagram"></i></a
+        ></span>
+        <span class="footer__link"
+          ><a target="”_blank”" href="https://github.com/natulims"
+            ><i class="bx bxl-github"></i></a
+        ></span>
+        <span class="footer__link"
+          ><a target="”_blank”" href="linkedin.com/in/nxtxlixlc/"
+            ><i class="bx bxl-linkedin"></i></a
+        ></span>
       </div>
     </footer>
-    <!--end - footer area-->
 
-    <script src="./assets/scripts/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

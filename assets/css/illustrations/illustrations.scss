@@ -37,15 +37,6 @@ body {
   }
 }
 
-.title {
-  @include title();
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 3em;
-  text-align: center;
-  color: $title-color;
-}
-
 /*dark mode css*/
 .dark-mode {
   width: 5rem;
@@ -60,69 +51,40 @@ body {
   }
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  letter-spacing: 1px;
-  line-height: 2em;
 
-  .w-40 {
-    @media screen and (min-width: 860px) {
-      width: 100%;
-      max-width: 30%;
-      margin-left: 1rem;
-    }
-  }
 
-  .m-10 {
-    @media screen and (min-width: 860px) {
-      width: 100%;
-      max-width: 30rem;
-      margin-left: 46rem;
-    }
-  }
-  .text {
-    @include text();
-    font-size: 1em;
-    text-align: justify;
-    padding: 2em;
-    color: $main-color;
-    font-family: "Poppins", sans-serif;
-    line-height: normal;
-
-    @media screen and (min-width: 860px) {
-      padding-left: 15rem;
-      padding-right: 15rem;
-      margin-top: 5rem;
-      font-size: 1rem;
-    }
+/**/
+.illustrations {
+  @media (min-width: 1025px) {
+    width: 30rem;
+    margin-left: 45rem;
   }
 }
 
-.skills {
-  &__title {
-    @include title();
-    font-size: 3em;
-    text-align: center;
-    color: $title-color;
-    @media (min-width: 860px) {
+.illustration {
+  @include text();
+  top: 30px;
+  color: $main-color;
+  line-height: 4rem;
+  gap: 90rem;
+  text-align: center;
+
+  a {
+    @media (min-width: 1025px) {
+      margin-left: 30rem;
+    }
+  }
+
+  &__img {
+    @media (min-width: 1025px) {
+      width: 50rem;
       margin-left: 5rem;
     }
   }
-
-  &__item {
-    @media (max-width: 860px) {
-      width: 110px;
-      margin: 0;
-      padding: 0;
-    }
-  }
 }
 
+
+/*button*/
 button {
   background-color: transparent;
   background-repeat: no-repeat;
