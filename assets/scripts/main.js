@@ -1,15 +1,20 @@
-// $('body').css('background-color','#121212')
+const btn = document.getElementById("submit");
+form.addEventListener("click", function (e) {
+  e.preventDefault();
 
-const form = document.getElementById("submit");
-
-form.addEventListener("submit", () => {
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "username",
-    Password: "password",
-    To: "them@website.com",
-    From: "you@isp.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
-  }).then((message) => alert(message));
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+  // let body = `${name} <br/> ${lastname} <br/> ${email} <br/> ${subject} <br/>`;
+  let body =
+    "name: " + name + "<br/> email: " + email + "<br/> message: " + message;
+  email.send({
+      Host: "smtp.gmail.com",
+      Username: "nxtxlix.lc@gmail.com",
+      Password: "nxuhqjuoclopmzii",
+      To: "nxtxlix.lc@gmail.com",
+      From: email,
+      Body: body,
+    })
+    .then((message) => alert(message));
 });

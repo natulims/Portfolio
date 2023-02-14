@@ -46,7 +46,7 @@
     </div>
 
     <!--form-->
-    <form class="form">
+    <form method="post" class="form">
       <h2 class="form__title">Get in touch</h2>
       <p class="form__text">
         In case you want to know more about my work just leave me a message and
@@ -58,19 +58,14 @@
           class="form__input--name"
           placeholder="First Name"
           id="name"
-          required
-        />
-        <input
-          type="text"
-          class="form__input--lastname"
-          placeholder="Last Name"
-          id="last-name"
+          autocomplete="off"
           required
         />
         <input
           type="email"
           class="form__input--email"
           placeholder="Email"
+          autocomplete="off"
           id="email"
           required
         />
@@ -79,7 +74,7 @@
           class="form__textarea"
           rows="10"
           placeholder="Message"
-          id="textarea"
+          id="message"
           required
         ></textarea>
         <button type="submit" class="form__btn" id="submit">
@@ -91,11 +86,7 @@
     <!--previous page-->
     <div class="flex justify-center rounded-md items-center">
       <button class="previous-page">
-        <a href="/index.html"
-          ><img
-            src="assets/imgs/seta.png"
-            alt=""
-        /></a>
+        <a href="index.html"><img src="assets/imgs/seta.png" alt="" /></a>
       </button>
     </div>
 
@@ -117,5 +108,9 @@
         ></span>
       </div>
     </footer>
+
+    <!--scripts-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/assets/scripts/main.js"></script>
   </body>
 </html>
