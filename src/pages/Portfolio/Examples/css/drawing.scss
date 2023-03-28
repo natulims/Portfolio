@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+  padding: 2rem;
+
+  &__image {
+    display: block;
+    width: 38rem;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  &__overlay {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: -5rem;
+    position: absolute;
+    border-radius: 15px;
+    margin-left: 2rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 34.8rem;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #e961493b;
+
+    @media (max-width: 480px) {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-right: -5rem;
+      position: absolute;
+      border-radius: 15px;
+      margin-left: 2rem;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 34.8rem;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: white;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    color: beige;
+    position: absolute;
+
+    @media (max-width:480px) {
+        color: aqua;
+    }
+  }
+}
