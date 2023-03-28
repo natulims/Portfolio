@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$bg-color: #1c1b21;
+$text-color: #f0efe1;
+
+//font
+
+body {
+  font-family: "Baloo Chettan 2", cursive;
+  background-color: $bg-color;
+  color: $text-color;
+  font-size: 1.1em;
+}
