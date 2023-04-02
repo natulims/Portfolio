@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import illustrations from "../Portfolio/images/illustrations.png";
-import graphicdesign from "../Portfolio/images/graphicdesign.png";
-import webproject from "../Portfolio/images/webprojects.png";
+import illustrations from "../Portfolio/images/illustrations.webp";
+import graphicdesign from "../Portfolio/images/graphicdesign.webp";
+import webproject from "../Portfolio/images/webprojects.webp";
 
 function Category() {
   return (

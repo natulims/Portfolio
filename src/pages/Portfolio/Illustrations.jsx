@@ -6,12 +6,28 @@ import PNGTuber from "../Portfolio/Examples/PNGTuber";
 import Badges from "../Portfolio/Examples/Badges";
 import Drawing from "../Portfolio/Examples/Drawings";
 import Button from "./Button";
+import emote from "../Portfolio/images/emotes.webp";
+import badge from "../Portfolio/images/badges.webp";
+import pngtuber from "../Portfolio/images/pngtuber.webp";
+import drawing from "../Portfolio/images/drawings.webp";
 
 function Illustrations() {
   return (
     <>
       <main>
-        <h1>auhauah</h1>
+        <motion.section
+          variants={fadeIn("down")}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="mt-20"
+        >
+          {" "}
+          <div className="flex justify-center">
+            <img src={drawing} alt="drawings" />
+          </div>
+          <Drawing />
+        </motion.section>
 
         <motion.section
           variants={fadeIn("up")}
@@ -21,7 +37,7 @@ function Illustrations() {
           className="m-5"
         >
           <div className="flex justify-center">
-            <img src="" alt="emotes" />
+            <img src={emote} alt="emotes" />
           </div>
           <Emote />
         </motion.section>
@@ -34,7 +50,7 @@ function Illustrations() {
           className="mt-20"
         >
           <div className="flex justify-center mb-10">
-            <img src="" alt="pngtuber" />
+            <img src={pngtuber} alt="pngtuber" />
           </div>
           <PNGTuber />
         </motion.section>
@@ -48,23 +64,9 @@ function Illustrations() {
         >
           {" "}
           <div className="flex justify-center">
-            <img src="" alt="badges" />
+            <img src={badge} alt="badges" />
           </div>
           <Badges />
-        </motion.section>
-
-        <motion.section
-          variants={fadeIn("down")}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
-          className="mt-20"
-        >
-          {" "}
-          <div className="flex justify-center">
-            <img src="" alt="drawings" />
-          </div>
-          <Drawing />
         </motion.section>
 
         <div className="flex justify-center">

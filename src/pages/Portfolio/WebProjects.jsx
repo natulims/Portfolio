@@ -4,11 +4,15 @@ import { fadeIn } from "../../components/utilities/variant";
 import anikaze from "../Portfolio/images/anikaze.webp";
 import tattoo from "../Portfolio/images/tattoo.webp";
 import Button from "./Button";
+import webproject from "../Portfolio/images/webdesign.webp";
 
 export default function WebProjects() {
   return (
     <>
       <main>
+        <div className="flex justify-center">
+          <img src={webproject} alt="" />
+        </div>
         <h1 className="text-center">welcome to my web design projects!</h1>
         <motion.section
           variants={fadeIn("up")}
@@ -104,7 +108,9 @@ export default function WebProjects() {
             </div>
 
             <div className="ml-10 mt-[15rem]">
-              <span className="ml-24 mb-10 text-4xl lg:text-4xl">FrontEnders</span>
+              <span className="ml-24 mb-10 text-4xl lg:text-4xl">
+                FrontEnders
+              </span>
               <div className="flex flex-row gap-8">
                 <button className="px-8 py-3 text-4xl lg:text-2xl font-semibold rounded bg-carnation">
                   <a

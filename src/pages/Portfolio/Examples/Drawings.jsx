@@ -7,56 +7,8 @@ function Drawings() {
     <>
       <div style={{ marginTop: "50px" }} />
       <ScrollToTop smooth />
-      <article className="drawing">
-        <section className="grid grid-cols-2 lg:grid-cols-3">
-          <div className="py-5 px-10">
-            <img
-              className="rounded-lg"
-              src="https://imgur.com/2c72AjK.jpg"
-              alt=""
-            />
-          </div>
-
-          <div className="py-5 px-10">
-            <img
-              className="rounded-lg"
-              src="https://imgur.com/2c72AjK.jpg"
-              alt=""
-            />
-          </div>
-
-          <div className="py-5 px-10">
-            <img
-              className="rounded-lg"
-              src="https://imgur.com/2c72AjK.jpg"
-              alt=""
-            />
-          </div>
-
-          <div className="py-5 px-10">
-            <img
-              className="rounded-lg"
-              src="https://imgur.com/2c72AjK.jpg"
-              alt=""
-            />
-          </div>
-
-          <div className="py-5 px-10">
-            <img
-              className="rounded-lg"
-              src="https://imgur.com/2c72AjK.jpg"
-              alt=""
-            />
-          </div>
-
-          <div className="py-5 px-10">
-            <img
-              className="rounded-lg"
-              src="https://imgur.com/2c72AjK.jpg"
-              alt=""
-            />
-          </div>
-
+      <article className="w-full">
+        <section className="grid grid-cols-1 lg:grid-cols-3">
           <div className="py-5 px-10">
             <img
               className="rounded-lg"

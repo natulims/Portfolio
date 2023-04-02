@@ -1,5 +1,5 @@
 import React from "react";
-import portfolio from "../Portfolio/images/portfolio.png";
+import portfolio from "../Portfolio/images/portfolio.webp";
 import Category from "./Category";
 
 function Portfolio() {
